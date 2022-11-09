@@ -41,7 +41,7 @@ validAccounts = []
 for user in inputter:
     if x < 10:
         print("Since the input is less than 10 lines, not checking for normalization")
-        break
+        email = user.strip()
     elif normalized == 0:
         email = user.strip() + "@" + args.domain
     elif normalized == 11:
